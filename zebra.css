@@ -1,6 +1,7 @@
 body {
     font-family: "Segoe UI", Segoe, Arial, sans-serif;
     font-size: 1.5rem;
+    background-color: hsl(40,100%,75%)
 }
 
 div {
@@ -16,6 +17,7 @@ table {
     border-collapse: collapse;
     border: 1px solid black;
     overflow: hidden;
+    background-color: #fff;
 }
 
 tr {
