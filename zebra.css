@@ -1,10 +1,9 @@
 body {
     font-family: "Segoe UI", Segoe, Arial, sans-serif;
     font-size: 1.5rem;
-    background-color: hsl(40,100%,75%)
 }
 
-div {
+.wrapper {
     width: 80%;
     max-width: 1500px;
     min-width: 600px;
@@ -17,24 +16,15 @@ table {
     border-collapse: collapse;
     border: 1px solid black;
     overflow: hidden;
-    background-color: #fff;
 }
 
 tr {
     height: 4rem;
 }
 
-/*tr:nth-child(even) {
-    background-color: hsl(60,100%,67%);
-}*/
-
 tr:hover {
     background-color: hsl(60,100%,75%);
 }
-
-/*col:nth-child(even) {
-    background-color: hsl(60,100%,67%);
-}*/
 
 td, th {
     text-align: center;
@@ -43,7 +33,7 @@ td, th {
 }
 
 td:hover, th:hover {
-    background-color: hsl(60,100%,67%);
+    background-color: hsl(60,100%,66%);
 }
 td:hover:after, th:hover:after {
     content: 'a\00a0';
@@ -52,8 +42,8 @@ td:hover:after, th:hover:after {
     top: -5000px;
     height: 10000px;
     width: 100%;
-    background-color: hsl(60,100%,75%);
-    z-index: -5;
+    background-color: hsl(60,100%,75%) !important;
+    z-index: -1;
 }
 
 caption {
