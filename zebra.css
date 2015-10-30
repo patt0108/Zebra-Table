@@ -12,10 +12,18 @@ body {
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
     border: 1px solid black;
     overflow: hidden;
+    width: 100%;
+}
+
+col {
+    width: 10%;
+}
+
+col:not(:first-child) {
+    width: 18%;
 }
 
 tr {
@@ -36,7 +44,7 @@ td:hover, th:hover {
     background-color: hsl(60,100%,66%);
 }
 td:hover:after, th:hover:after {
-    content: 'a\00a0';
+    content: '\00a0';
     position: absolute;
     left: 0;
     top: -5000px;
