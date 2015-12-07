@@ -7,7 +7,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
+   <input type="radio" name="semester" value="2015F" onclick="toggle('F2015')" checked>2015F
+   <input type="radio" name="semester" onclick="toggle('W2016')" value="2016W">2016W
+
+    <div class="wrapper" id="F2015">
     <table>
         <caption><h1>Harvey's class schedule</h1></caption>
         <colgroup>
@@ -30,7 +33,7 @@
         </thead>
         <tbody>
             <tr>
-                <th>08:00</th>
+                <th rowspan="2">08:00</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -38,7 +41,6 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>09:00</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -46,7 +48,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>10:00</th>
+                <th rowspan="2">09:00</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -54,65 +56,313 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>11:00</th>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td title="Cross-Platform Web Development" rowspan="2">MAD9013<br>B183</td>
-            </tr>
-            <tr>
-                <th>12:00</th>
-                <td title="Intro to Computer Programming Using Python">CST8279<br>C144</td>
-                <td>&nbsp;</td>
-                <td title="Database Systems and Concepts" rowspan="2">CST8260<br>T111</td>
-                <td title="Intro to Computer Programming Using Python" rowspan="2">CST8279<br>T111</td>
-            </tr>
-            <tr>
-                <th>13:00</th>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td title="Math Fundamentals" rowspan="2">MAT8001<br>B158</td>
-            </tr>
-            <tr>
-                <th>14:00</th>
-                <td title="Math Fundamentals">MAT8001<br>B455</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <th>15:00</th>
-                <td title="Database Systems and Concepts">CST8260<br>B457</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>16:00</th>
-                <td title="Web Programming I">CST8209<br>B320</td>
-                <td title="Achieving Success in Changing Environments" rowspan="2">CST8300<br>T117</td>
+                <th rowspan="2">10:00</th>
                 <td>&nbsp;</td>
-                <td title="Cross-Platform Web Development" rowspan="2">MAD9013<br>J210</td>
                 <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <th>17:00</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>18:00</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td title="Web Programming I">CST8209<br>T207</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">11:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Cross-Platform Web Development<br>MAD9013<br>B183</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">12:00</th>
+                <td title="Intro to Computer Programming Using Python" rowspan="2">CST8279<br>C144</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Database Systems and Concepts<br>CST8260<br>T111</td>
+                <td rowspan="4">Intro to Computer Programming Using Python<br>CST8279<br>T111</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">13:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Math Fundamentals<br>MAT8001<br>B158</td>
+            </tr>
+            <tr>
+                <th rowspan="2">14:00</th>
+                <td title="Math Fundamentals" rowspan="2">MAT8001<br>B455</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">15:00</th>
+                <td title="Database Systems and Concepts" rowspan="2">CST8260<br>B457</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">16:00</th>
+                <td title="Web Programming I" rowspan="2">CST8209<br>B320</td>
+                <td rowspan="4">Achieving Success in Changing Environments<br>CST8300<br>T117</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Cross-Platform Web Development<br>MAD9013<br>J210</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">17:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">18:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td title="Web Programming I" rowspan="2">CST8209<br>T207</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </tbody>
     </table>
     </div>
+
+   <div class="wrapper" id="W2016">
+    <table>
+        <caption><h1>Harvey's class schedule</h1></caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">08:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="6">Graphics Technologies<br>MAD9010<br>T327</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">09:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Database Design and Administration<br>CST8250<br>T111</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">10:00</th>
+                <td>&nbsp;</td>
+                <td rowspan="4">Database Design and Administration<br>CST8250<br>J217</td>
+                <td title="Communications I" rowspan="2">ENL1813T<br>T123</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">11:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">12:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Network Operating Systems<br>CST8254<br>T304</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            </tr>
+            <tr>
+                <th rowspan="2">13:00</th>
+                <td rowspan="6">Network Operating Systems<br>CST8254<br>T111</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">14:00</th>
+                <td>&nbsp;</td>
+                <td rowspan="4">Communications I<br>ENL1813T<br>T302</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="4">Web Programming II<br>CST8253<br>P211A</td>
+            </tr>
+            <tr>
+                <th rowspan="2">15:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">16:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">17:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">18:00</th>
+                <td rowspan="4">Web Programming II<br>CST8253<br>A136D</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th rowspan="2">19:00</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <script type="text/javascript">
+        function toggle(toshow) {
+            tables = document.getElementsByClassName('wrapper');
+            for (var i=0; i < tables.length; i++) {
+                tables[i].style.display = 'none';
+            }
+            document.getElementById(toshow).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

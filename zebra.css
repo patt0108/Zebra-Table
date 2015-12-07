@@ -1,6 +1,6 @@
 body {
     font-family: "Segoe UI", Segoe, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .wrapper {
@@ -27,7 +27,15 @@ col:not(:first-child) {
 }
 
 tr {
-    height: 4rem;
+    height: 2rem;
+}
+
+tr:nth-child(odd) {
+    border-top: 1px solid black;
+}
+
+tr:nth-child(even) {
+    border-top: 1px dotted black;
 }
 
 tr:hover {
@@ -37,7 +45,7 @@ tr:hover {
 td, th {
     text-align: center;
     position: relative;
-    border: 1px solid black;
+    border-left: 1px solid black;
 }
 
 td:hover, th:hover {
@@ -54,10 +62,17 @@ td:hover:after, th:hover:after {
     z-index: -1;
 }
 
-caption {
-    background-color: #fff;
+th:first-child{
+    vertical-align: top;
 }
 
+caption {
+    background-color: #fff; /* so that highlighted column doesn't show through caption */
+}
+
+#W2016 {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     body {
