@@ -11,6 +11,14 @@ body {
     margin-right: auto;
 }
 
+.theory {
+    background-color: lightblue;
+}
+
+.lab {
+    background-color: lightgreen;
+}
+
 table {
     border-collapse: collapse;
     border: 1px solid black;
@@ -58,7 +66,7 @@ td:hover:after, th:hover:after {
     top: -5000px;
     height: 10000px;
     width: 100%;
-    background-color: hsl(60,100%,75%) !important;
+    background-color: hsl(60,100%,75%);
     z-index: -1;
 }
 
