@@ -1,6 +1,5 @@
 body {
     font-family: "Segoe UI", Segoe, Arial, sans-serif;
-    font-size: 1.3rem;
 }
 
 .wrapper {
@@ -46,7 +45,7 @@ tr:nth-child(even) {
     border-top: 1px dotted black;
 }
 
-tr:hover {
+tr:hover, tr:hover td {
     background-color: hsl(60,100%,75%);
 }
 
@@ -57,7 +56,7 @@ td, th {
 }
 
 td:hover, th:hover {
-    background-color: hsl(60,100%,66%);
+    background-color: hsl(60,100%,66%) !important;
 }
 td:hover:after, th:hover:after {
     content: '\00a0';
