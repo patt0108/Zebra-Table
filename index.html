@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Zebra-stripe table</title>
-    <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="zebra.css"/>
 </head>
 
-<body>
-   <input type="radio" name="semester" id="2015F" value="2015F" onclick="toggle('F2015')" checked><label for="2015F">2015F</label>
-   <input type="radio" name="semester" id="2016W" value="2016W" onclick="toggle('W2016')"><label for="2016W">2016W</label>
+<body onload="document.getElementById('W16').checked = true">
+   <input type="radio" name="semester" id="F15" value="F2015" onClick="toggle('F2015')"><label for="F15">2015F</label>
+   <input type="radio" name="semester" id="W16" value="W2016" onClick="toggle('W2016')"><label for="W16">2016W</label>
 
     <div class="wrapper" id="F2015">
     <table>
@@ -349,6 +349,8 @@
             }
             document.getElementById(toshow).style.display = 'block';
         }
+		
+		toggle('W2016');
     </script>
 </body>
 </html>
