@@ -45,7 +45,7 @@ tr:nth-child(even) {
 }
 
 tr:hover, tr:hover td {
-    background-color: hsl(60,100%,75%);
+    background-color: hsl(60,100%,80%);
 }
 
 td, th {
@@ -55,7 +55,7 @@ td, th {
 }
 
 td:hover, th:hover {
-    background-color: hsl(60,100%,66%) !important;
+    background-color: hsl(60,100%,60%) !important;
 }
 td:hover:after, th:hover:after {
     content: '\00a0';
@@ -64,7 +64,7 @@ td:hover:after, th:hover:after {
     top: -5000px;
     height: 10000px;
     width: 100%;
-    background-color: hsl(60,100%,75%);
+    background-color: hsl(60,100%,80%);
     z-index: -1;
 }
 
