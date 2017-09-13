@@ -6,11 +6,15 @@ h1 {
     margin-top: 0;
 }
 
-.wrapper {
+#timetable {
     max-width: 1500px;
     min-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.wrapper {
+    display: none;
 }
 
 .theory {
@@ -19,6 +23,10 @@ h1 {
 
 .lab {
     background-color: lightgreen;
+}
+
+.currentDay {
+    background-color: yellow;
 }
 
 table {
