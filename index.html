@@ -7,12 +7,17 @@
 </head>
 
 <body onload="document.getElementById('F17').checked = true">
-   <input type="radio" name="semester" id="F15" value="F2015" onclick="toggle('F2015')"><label for="F15">2015F</label>
-   <input type="radio" name="semester" id="W16" value="W2016" onclick="toggle('W2016')"><label for="W16">2016W</label>
-   <input type="radio" name="semester" id="F16" value="F2016" onclick="toggle('F2016')"><label for="F16">2016F</label>
-   <input type="radio" name="semester" id="W17" value="W2017" onclick="toggle('W2017')"><label for="W17">2017W</label>
-    <input type="radio" name="semester" id="F17" value="F2017" onclick="toggle('F2017')"><label for="F17">2017F</label>
-
+    <nav>
+        <div>
+            <input type="radio" name="semester" id="F15" value="F2015" onclick="toggle('F15')"><label for="F15">2015F</label>
+            <input type="radio" name="semester" id="W16" value="W2016" onclick="toggle('W16')"><label for="W16">2016W</label>
+            <input type="radio" name="semester" id="F16" value="F2016" onclick="toggle('F16')"><label for="F16">2016F</label>
+            <input type="radio" name="semester" id="W17" value="W2017" onclick="toggle('W17')"><label for="W17">2017W</label>
+            <input type="radio" name="semester" id="F17" value="F2017" onclick="toggle('F17')"><label for="F17">2017F</label>            
+        </div>
+        <div id="legend"><span class="theory">&nbsp;</span> Theory <span class="lab">&nbsp;</span> Lab</div>       
+    </nav>
+    
     <table>
         <caption><h1>Harvey's class schedule</h1></caption>
         <colgroup>
@@ -37,9 +42,9 @@
         </tbody>
     </table>
 
-<table class="wrapper" id="F2015">
+<table class="wrapper" id="F15_table">
     <tr>
-        <th rowspan="2">08:00</th>
+        <th rowspan="2" id="F15_8">08:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -54,7 +59,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">09:00</th>
+        <th rowspan="2" id="F15_9">09:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -69,7 +74,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">10:00</th>
+        <th rowspan="2" id="F15_10">10:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -84,7 +89,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">11:00</th>
+        <th rowspan="2" id="F15_11">11:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -98,7 +103,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">12:00</th>
+        <th rowspan="2" id="F15_12">12:00</th>
         <td title="Intro to Computer Programming Using Python" rowspan="2" class="theory">CST8279 [C144]<br>Jérôme Mizon</td>
         <td>&nbsp;</td>
         <td rowspan="4" class="lab">Database Systems and Concepts<br>CST8260 [T111]<br>Jérôme Mizon</td>
@@ -108,7 +113,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">13:00</th>
+        <th rowspan="2" id="F15_13">13:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -119,7 +124,7 @@
         <td rowspan="4" class="theory">Math Fundamentals<br>MAT8001 [B158]<br>James McLaren</td>
     </tr>
     <tr>
-        <th rowspan="2">14:00</th>
+        <th rowspan="2" id="F15_14">14:00</th>
         <td title="Math Fundamentals" rowspan="2" class="theory">MAT8001 [B455]<br>James McLaren</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -131,7 +136,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">15:00</th>
+        <th rowspan="2" id="F15_15">15:00</th>
         <td title="Database Systems and Concepts" rowspan="2" class="theory">CST8260 [B457]<br>Jérôme Mizon</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -144,7 +149,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">16:00</th>
+        <th rowspan="2" id="F15_16">16:00</th>
         <td title="Web Programming I" rowspan="2" class="lab">CST8209 [B320]<br>Mary Burney</td>
         <td rowspan="4" class="theory">Achieving Success in Changing Environments<br>CST8300 [T117]<br>Angela Peterson</td>
         <td>&nbsp;</td>
@@ -156,7 +161,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">17:00</th>
+        <th rowspan="2" id="F15_17">17:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -167,7 +172,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">18:00</th>
+        <th rowspan="2" id="F15_18">18:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td title="Web Programming I" rowspan="2" class="theory">CST8209 [T207]<br>Mary Burney</td>
@@ -181,7 +186,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <th rowspan="2">19:00</th>
+        <th rowspan="2" id="F15_19">19:00</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -212,9 +217,9 @@
     </tr>
 </table>
 
-	<table class="wrapper" id="W2016">
+	<table class="wrapper" id="W16_table">
         <tr>
-            <th rowspan="2">08:00</th>
+            <th rowspan="2" id="W16_8">08:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -229,7 +234,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">09:00</th>
+            <th rowspan="2" id="W16_9">09:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -244,7 +249,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">10:00</th>
+            <th rowspan="2" id="W16_10">10:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Database Design and Administration<br>CST8250 [J217]<br>Jérôme Mizon</td>
             <td title="Communications I" rowspan="2" class="theory">ENL1813T [T123]<br>Elizabeth Marshall</td>
@@ -255,7 +260,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">11:00</th>
+            <th rowspan="2" id="W16_11">11:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -268,7 +273,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">12:00</th>
+            <th rowspan="2" id="W16_12">12:00</th>
             <td>&nbsp;</td>
             <td rowspan="6" class="lab">Network Operating Systems<br>CST8254 [T111]<br>Jérôme Mizon</td>
             <td rowspan="4" class="theory">Network Operating Systems<br>CST8254 [T304]<br>Jérôme Mizon</td>
@@ -279,7 +284,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">13:00</th>
+            <th rowspan="2" id="W16_13">13:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -288,7 +293,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">14:00</th>
+            <th rowspan="2" id="W16_14">14:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Communications I<br>ENL1813T [P201]<br>Elizabeth Marshall</td>
             <td>&nbsp;</td>
@@ -300,7 +305,7 @@
             <td rowspan="4" class="theory">Web Programming II<br>CST8253 [P211A]<br>Wei Gong</td>
         </tr>
         <tr>
-            <th rowspan="2">15:00</th>
+            <th rowspan="2" id="W16_15">15:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -311,7 +316,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">16:00</th>
+            <th rowspan="2" id="W16_16">16:00</th>
             <td rowspan="4" class="lab">Web Programming II<br>CST8253 [B183]<br>Wei Gong</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -324,7 +329,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">17:00</th>
+            <th rowspan="2" id="W16_17">17:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -337,7 +342,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">18:00</th>
+            <th rowspan="2" id="W16_18">18:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -352,7 +357,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">19:00</th>
+            <th rowspan="2" id="W16_19">19:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -374,9 +379,9 @@
         </tr>
     </table>
 
-   <table class="wrapper" id="F2016">
+   <table class="wrapper" id="F16_table">
         <tr>
-            <th rowspan="2">08:00</th>
+            <th rowspan="2" id="F16_8">08:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td title="Web Applications Development" rowspan="2" class="theory">CST8257 [B185]<br>Wei Gong</td>
@@ -390,7 +395,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">09:00</th>
+            <th rowspan="2" id="F16_9">09:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Web Programming Languages I<br>CST8256 [B185]<br>Wei Gong</td>
@@ -403,7 +408,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">10:00</th>
+            <th rowspan="2" id="F16_10">10:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -414,7 +419,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">11:00</th>
+            <th rowspan="2" id="F16_11">11:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -429,7 +434,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">12:00</th>
+            <th rowspan="2" id="F16_12">12:00</th>
             <td rowspan="6" class="lab">Web Applications Development<br>CST8257 [B182]<br>Wei Gong</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -442,7 +447,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">13:00</th>
+            <th rowspan="2" id="F16_13">13:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -455,7 +460,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">14:00</th>
+            <th rowspan="2" id="F16_14">14:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -468,7 +473,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">15:00</th>
+            <th rowspan="2" id="F16_15">15:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -483,7 +488,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">16:00</th>
+            <th rowspan="2" id="F16_16">16:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="lab">Web Programming Languages I<br>CST8256 [B332]<br>Wei Gong</td>
             <td>&nbsp;</td>
@@ -497,7 +502,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">17:00</th>
+            <th rowspan="2" id="F16_17">17:00</th>
             <td title="Technical Report Writing" rowspan="2" class="theory">ENL8720 [CA202]<br>William Hennessy</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -509,7 +514,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">18:00</th>
+            <th rowspan="2" id="F16_18">18:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Web Project Management<br>CST8258 [B421]<br>Jason Abbott</td>
             <td>&nbsp;</td>
@@ -523,7 +528,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">19:00</th>
+            <th rowspan="2" id="F16_19">19:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -543,9 +548,9 @@
         </tr>
     </table>
 
-   <table class="wrapper" id="W2017">
+   <table class="wrapper" id="W17_table">
         <tr>
-            <th rowspan="2">08:00</th>
+            <th rowspan="2" id="W17_8">08:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -560,7 +565,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">09:00</th>
+            <th rowspan="2" id="W17_9">09:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -575,7 +580,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">10:00</th>
+            <th rowspan="2" id="W17_10">10:00</th>
             <td rowspan="4" class="theory">Technical Report Writing<br>ENL8720 [B165]<br>William Hennessy</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -589,7 +594,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">11:00</th>
+            <th rowspan="2" id="W17_11">11:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -601,7 +606,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">12:00</th>
+            <th rowspan="2" id="W17_12">12:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -613,7 +618,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">13:00</th>
+            <th rowspan="2" id="W17_13">13:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -625,7 +630,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">14:00</th>
+            <th rowspan="2" id="W17_14">14:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -640,7 +645,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">15:00</th>
+            <th rowspan="2" id="W17_15">15:00</th>
             <td rowspan="4" class="theory">eCommerce<br>CST8267 [B130]<br>Jérôme Mizon</td>
             <td rowspan="2" title="eCommerce" class="lab">CST8267 [CA402]<br>Jérôme Mizon</td>
             <td rowspan="4" class="theory">Web Security Basics<br>CST8265 [J210]<br>Mohammad Patoary</td>
@@ -651,7 +656,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">16:00</th>
+            <th rowspan="2" id="W17_16">16:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -660,7 +665,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">17:00</th>
+            <th rowspan="2" id="W17_17">17:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Web Programming Languages II<br>CST8259 [T111]<br>Wei Gong</td>
             <td>&nbsp;</td>
@@ -672,7 +677,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">18:00</th>
+            <th rowspan="2" id="W17_18">18:00</th>
             <td rowspan="4" class="theory">Project<br>CST8268 [B165]<br>Jason Abbott</td>
             <td rowspan="4" class="theory">Project<br>CST8268 [P213B]<br>Jason Abbott</td>
             <td>&nbsp;</td>
@@ -683,7 +688,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">19:00</th>
+            <th rowspan="2" id="W17_19">19:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -710,9 +715,9 @@
         </tr>
     </table>
 
-   <table class="wrapper" id="F2017">
+   <table class="wrapper" id="F17_table">
         <tr>
-            <th rowspan="2">09:00</th>
+            <th rowspan="2" id="F17_9">09:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -727,7 +732,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">10:00</th>
+            <th rowspan="2" id="F17_10">10:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -742,7 +747,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">11:00</th>
+            <th rowspan="2" id="F17_11">11:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -757,7 +762,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">12:00</th>
+            <th rowspan="2" id="F17_12">12:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td title="Business Programming" rowspan="2" class="lab">CST8283 [B320]<br>Mel Sanschagrin</td>
@@ -770,7 +775,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">13:00</th>
+            <th rowspan="2" id="F17_13">13:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -784,7 +789,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">14:00</th>
+            <th rowspan="2" id="F17_14">14:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="lab">Object-Oriented Programming (Java)<br>CST8284 [P213B]<br>David B Houtman</td>
             <td rowspan="4" class="lab">Mobile Graphical Interface Programming<br>CST2335 [P213B]<br>Abdul-Rahman Mawloods-Yunis</td>
@@ -795,8 +800,8 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">15:00</th>
-            <td title="Systems Analysis and Design" rowspan="2" class="lab">CST2234 [CA405]<br>Mel Sanschagrin</td>
+            <th rowspan="2" id="F17_15">15:00</th>
+            <td title="Systems Analysis and Design" rowspan="2" class="lab">CST2234 [CA405]<br>Heider Ali</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -805,7 +810,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">16:00</th>
+            <th rowspan="2" id="F17_16">16:00</th>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Mobile Graphical Interface Programming<br>CST2335 [C144]<br>Eric Torunski</td>
             <td>&nbsp;</td>
@@ -819,7 +824,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">17:00</th>
+            <th rowspan="2" id="F17_17">17:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -832,7 +837,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">18:00</th>
+            <th rowspan="2" id="F17_18">18:00</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td rowspan="4" class="theory">Business Programming<br>CST8283 [T117]<br>Mel Sanschagrin</td>
@@ -845,7 +850,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">19:00</th>
+            <th rowspan="2" id="F17_19">19:00</th>
             <td rowspan="4" class="theory">Systems Analysis and Design<br>CST2234 [C144]<br>Mel Sanschagrin</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -855,7 +860,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2">20:00</th>
+            <th rowspan="2" id="F17_20">20:00</th>
             <td rowspan="4" class="theory">Network Programming Basics<br>CST8108 [C144]<br>Marc Morissette</td>
             <td>&nbsp;</td>
             <td title="Network Programming Basics" rowspan="2" class="theory">CST8108 [C144]<br>Marc Morissette</td>
@@ -882,19 +887,23 @@
 
     <script type="text/javascript">
         function toggle(toshow) {
-            document.getElementById('timetable').innerHTML = document.getElementById(toshow).innerHTML;
+            document.getElementById('timetable').innerHTML = document.getElementById(toshow + '_table').innerHTML;
+            highlightTimeAndDay(toshow);
         }
         
-        function highlightDay() {
+        function highlightTimeAndDay(toshow) {
             var d = new Date();
-            var day = d.getDay();
+            var dayID = document.getElementById('d' + d.getDay());
+            var hourID = document.getElementById(toshow + "_" + d.getHours());
             
-            if (day > 0 && day < 6)
-                document.getElementById('d'+day).className = 'currentDay';
+            if (dayID)
+                dayID.className = 'current';
+
+            if (hourID)
+                hourID.className = 'current';
         }
 		
-		toggle('F2017');
-        highlightDay();
+		toggle('F17');
     </script>
 </body>
 </html>
